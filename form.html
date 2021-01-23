@@ -10,16 +10,27 @@
 
     <body>
         <h1 class="title">Workout Buddies</h1>
+        <a href="workoutbuddies.html">Leaderboard</a>
         <div>
-            <p id="tester">test</p>
+            <p>Enter the details of your workout in the form below</p>
         </div>
-        <form> 
-            <fieldset enabled> 
-            <legend>Contact Form</legend> 
-            <p>Name: <input id="name" type="text" size="30"></p>
-            <p>Workout Duration: <input id="duration" type="text" size="30"></p>
-            <p>Date (mm/dd/yyyy): <input id="date" type="text" size="30"></p>
-            <p>Description: <textarea id="details">Enter workout details here</textarea></p> 
+        <form name="form1" action="modified.php" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <label>Your Name:</label>
+                <input id="name" type="text" size="30">
+            </div>
+            <div class="field">
+                <label>Workout Duration:</label>
+                <input id="duration" type="text" size="30">
+            </div>
+            <div class="field">
+                <label>Date (mm/dd/yyyy):</label>
+                <input id="date" type="text" size="30">
+            </div>
+            <div class="field">
+                <label>Description:</label>
+                <input id="name" type="textarea">
+            </div>
             <input type = "button" onclick = "alert(document.getElementById('name').innerHTML);" name = "ok" value = "Submit" />
             </fieldset>
         </form>

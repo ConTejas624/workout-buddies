@@ -1,6 +1,27 @@
+/*dark green: 41946C, light green: A0DEC0, orange: E07224, dark blue: 1E4B94, light blue: C6CFDE*/
+
 .title {
-    background-color: gray;
+    background-color: #1E4B94;
     font-weight: bolder;
-    color: aquamarine;
-    font-size: 8em;
+    color: #A0DEC0;
+    font-size: 48px;
+}
+
+.field {
+    padding: 10px;
+}
+
+label {
+    float: left;
+    padding-right: 50px;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    background-color: #C6CFDE;
+}
+
+a {
+    background-color: #41946C;
 }
