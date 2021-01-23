@@ -3,7 +3,7 @@
 $host = "localhost";
 $dbusername = "root";
 $dbpassword = "";
-$dbname = "test";
+$dbname = "workout_buddies_data";
 
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 

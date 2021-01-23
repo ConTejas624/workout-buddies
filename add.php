@@ -9,7 +9,7 @@ if (!empty($name) and !empty($duration) and !empty($date) and !empty($descriptio
     $host = "localhost";
     $dbusername = "root";
     $dbpassword = "";
-    $dbname = "test";
+    $dbname = "workout_buddies_data";
 
     $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
@@ -17,7 +17,7 @@ if (!empty($name) and !empty($duration) and !empty($date) and !empty($descriptio
         die('Connect Error ('.mysqli_connect_errno() .') '. mysqli_connect_error());
     }
     else {
-        $sql = "INSERT INTO data (Name, Duration, Date, Description) values ('$name', '$duration', '$date', '$description')";
+        $sql = "INSERT INTO input_data (Name, Duration, Date, Description) values ('$name', '$duration', '$date', '$description')";
         if ($conn->query($sql)) {
             echo "New record is sucessfully inserted";
         }
