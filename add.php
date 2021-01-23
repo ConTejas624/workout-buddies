@@ -31,3 +31,4 @@ else {
     echo "One or more fields are empty";
     die();
 }
+?>
