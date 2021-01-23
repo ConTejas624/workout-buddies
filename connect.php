@@ -9,9 +9,23 @@ if (!empty($name) and !empty($duration) and !empty($date) and !empty($descriptio
     $host = "localhost";
     $dbusername = "root";
     $dbpassword = "";
-    $dbname = "test"
+    $dbname = "test";
 
-    $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname)
+    $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
+    if (mysqli_connect_error()) {
+        die('Connect Error ('.mysqli_connect_errno() .') '. mysqli_connect_error());
+    }
+    else {
+        $sql = "INSERT INTO data (Name, Duration, Date, Description) values ('$name', '$duration', '$date', '$description')";
+        if ($conn->query($sql)) {
+            echo "New record is sucessfully inserted";
+        }
+        else {
+            echo "Error: ". $sql ."
+            ". $conn->error;
+        }
+    }
 }
 else {
     echo "One or more fields are empty";
