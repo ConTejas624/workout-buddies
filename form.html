@@ -4,13 +4,14 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Workout Buddies</title>
         <meta charset="UTF-8">
-        <meta name="author" content="Tejas George">
+        <meta name="author" content="Tejas George">        
+        <script src = "script.js" type = "text/javascript"></script>
     </head>
 
     <body>
         <h1 class="title">Workout Buddies</h1>
         <div>
-            <p>test</p>
+            <p id="tester">test</p>
         </div>
         <form> 
             <fieldset enabled> 
@@ -19,12 +20,8 @@
             <p>Workout Duration: <input id="duration" type="text" size="30"></p>
             <p>Date (mm/dd/yyyy): <input id="date" type="text" size="30"></p>
             <p>Description: <textarea id="details">Enter workout details here</textarea></p> 
-            <p><input type="submit" onclick="submit()"></p>
+            <input type = "button" onclick = "alert(document.getElementById('name').innerHTML);" name = "ok" value = "Submit" />
             </fieldset>
         </form>
     </body>
 </html>
-
-<script>
-    var submit
-</script>
