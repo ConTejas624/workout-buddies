@@ -14,25 +14,41 @@
         <div>
             <p>Enter the details of your workout in the form below</p>
         </div>
-        <form name="form1" action="modified.php" method="post" enctype="multipart/form-data">
+
+        <form id="form1" action="submitted.php" method="GET">
             <div class="field">
                 <label>Your Name:</label>
-                <input id="name" type="text" size="30">
+                <input name="name" type="text" size="30">
             </div>
             <div class="field">
                 <label>Workout Duration:</label>
-                <input id="duration" type="text" size="30">
+                <input name="duration" type="text" size="30">
             </div>
             <div class="field">
-                <label>Date (mm/dd/yyyy):</label>
-                <input id="date" type="text" size="30">
+                <label>Date:</label>
+                <input name="date" type="date" size="30">
             </div>
             <div class="field">
                 <label>Description:</label>
-                <input id="name" type="textarea">
+                <input name="name" type="textarea">
             </div>
-            <input type = "button" onclick = "alert(document.getElementById('name').innerHTML);" name = "ok" value = "Submit" />
-            </fieldset>
+            <button type = "submit">Submit</button>
         </form>
+
+        <button onclick="myFunction()">verify</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("form1");
+            var text = "";
+            var i;
+            for (i = 0; i < x.length ;i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        </script>
     </body>
 </html>
