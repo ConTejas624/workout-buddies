@@ -1,9 +1,9 @@
-/*dark green: 41946C, light green: A0DEC0, orange: E07224, dark blue: 1E4B94, light blue: C6CFDE*/
+/*5970A8,15246B,A7C0E8,FFFFFF,F3F3F3*/
 
 .title {
-    background-color: #1E4B94;
+    background-color: #15246B;
     font-weight: bolder;
-    color: #A0DEC0;
+    color: #FFFFFF;
     font-size: 48px;
 }
 
@@ -19,9 +19,16 @@ label {
 body {
     color: black;
     font-size: 20px;
-    background-color: #C6CFDE;
+    background-color: #A7C0E8;
 }
 
 a {
-    background-color: #41946C;
+    background-color: #5970A8;
+    text-decoration-color: #5970A8;
+    color: #F3F3F3;
+}
+
+th {
+    background-color: #F3F3F3;
+    border: 10px;
 }
