@@ -17,37 +17,21 @@
         <form id="form1" action="connect.php" method="POST">
             <div class="field">
                 <label>Your Name:</label>
-                <input name="name" type="text" size="30" placeholder="First Name">
+                <input name="name" type="text" size="30" placeholder="First Name" required>
             </div>
             <div class="field">
                 <label>Workout Duration:</label>
-                <input name="duration" type="text" size="30" placeholder="Time taken for workout">
+                <input name="duration" type="text" size="30" placeholder="Time taken for workout in minutes" required>
             </div>
             <div class="field">
                 <label>Date:</label>
-                <input name="date" type="date" size="30">
+                <input name="date" type="date" size="30" required>
             </div>
             <div class="field">
                 <label>Description:</label>
-                <input name="description" type="textarea" placeholder="Activity, Sets, and Reps">
+                <input name="description" type="textarea" height="30" width="90" placeholder="Activity, Sets, and Reps">
             </div>
-            <button type = "submit">Submit</button>
+            <input type = "submit" value="Submit">
         </form>
-
-        <button onclick="myFunction()">verify</button>
-
-        <p id="demo"></p>
-
-        <script>
-        function myFunction() {
-            var x = document.getElementById("form1");
-            var text = "";
-            var i;
-            for (i = 0; i < x.length ;i++) {
-                text += x.elements[i].value + "<br>";
-            }
-            document.getElementById("demo").innerHTML = text;
-        }
-        </script>
     </body>
 </html>
