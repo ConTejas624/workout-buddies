@@ -35,26 +35,22 @@ $sql = "SELECT * FROM leaderboard";
 $result = $conn->query($sql);
 
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    ?>
-    <tr>
-        <td>
-            <?php echo $row['name'];?>
-        </td>
-        <td>
-            <?php echo $row['this_week'];?>
-        </td>
-        <td>
-            <?php echo $row['total'];?>
-        </td>
-    </tr>
-    <?php
-  }
-} else {
-  echo "0 results";
+while($row = $result->fetch_assoc()) {
+?>
+<tr>
+    <td>
+        <?php echo $row['name'];?>
+    </td>
+    <td class="number">
+        <?php echo $row['this_week'];?>
+    </td>
+    <td class="number">
+        <?php echo $row['total'];?>
+    </td>
+</tr>
+<?php
 }
+
 $conn->close();
 
 ?>         
