@@ -14,7 +14,7 @@
             <tr>
                 <th>Name</th>
                 <th>Workouts this week</th>
-                <th>Time worked out this week</th>
+                <th>Minutes worked out this week</th>
             </tr>
 <?php
 
