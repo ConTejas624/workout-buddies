@@ -9,7 +9,7 @@
     <body>
         <h1 class="title">Workout Buddies</h1>
         <a href="form.html">Workout entry</a>
-        <a href="table2.php">Sort by time</a><br><br>
+        <a href="table.php">Sort by workouts</a><br><br>
         <table id="data_table">
             <tr>
                 <th>Name</th>
@@ -32,7 +32,7 @@ if (mysqli_connect_error()) {
     die('Connect Error ('.mysqli_connect_errno() .') '. mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM leaderboard ORDER BY this_week DESC";
+$sql = "SELECT * FROM leaderboard ORDER BY minutes DESC";
 $result = $conn->query($sql);
 
 

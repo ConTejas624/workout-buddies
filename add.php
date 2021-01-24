@@ -1,3 +1,14 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Workout Buddies</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tejas George">
+    </head>
+
+    <body>
+        <h1 class="title">Workout Buddies</h1>
+        <a href="table.php">Leaderboard</a>
 <?php
 
 $name = filter_input(INPUT_POST, 'name');
@@ -35,3 +46,5 @@ else {
 $conn->close();
 
 ?>
+    </body>
+</html>

@@ -19,14 +19,16 @@ users = {}
 for r in results:
     if r[0] in users.keys():
         user = users[r[0]]
-        user[2] += 1
+        
         if r[2].strftime('%U') == week.strftime('%U'):
             user[1] += 1
+            user[2] += r[1]
         users[r[0]] = user
     else:
-        user = [r[0], 0, 1]
+        user = [r[0], 0, 0]
         if r[2].strftime('%U') == week.strftime('%U'):
             user[1] += 1
+            user[2] += r[1]
         users[r[0]] = user
 
 mycursor = data.cursor()
