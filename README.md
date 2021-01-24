@@ -1,7 +1,7 @@
 ## Inspiration
 Me and a couple of my friends had a conversation over winter break about how hard it was for us to stay motivated to workout throughout the week. We ended up making a "workout pact" that we would tell the others when we worked out, and make it a bit competitive to see who did the most.
 ## What it does
-Users simply click "Workout entry" to fill out a form with the relevant information about their workout. The user clicks submit, and is shown a confirmation page with a link back to the main leaderboard. The leaderboard is by default sorted by workouts per week, but can also be sorted by workout time per week as well. To switch between the two, the user must click "Sort by time" or "Sort by workouts". The user can see which of the other users has worked out the most that week.
+Workout Buddies tracks the number of times per week and the time per week of multiple users' workouts. It then creates a leaderboard showing who did the most that week. Users simply click "Workout entry" to fill out a form with the relevant information about their workout. The user clicks submit, and is shown a confirmation page with a link back to the main leaderboard. The leaderboard is by default sorted by workouts per week, but can also be sorted by workout time per week as well. To switch between the two, the user must click "Sort by time" or "Sort by workouts". The user can see which of the other users has worked out the most that week.
 ## How I built it
 I used HTML and CSS to create and format the pages. I used PHP to link the HTML pages to the MySQL server, and Python to process the raw input_data into the leaderboard data.
 ## Challenges I ran into
