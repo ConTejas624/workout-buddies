@@ -32,4 +32,6 @@ else {
     die();
 }
 
+$conn->close();
+
 ?>
